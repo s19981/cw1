@@ -10,7 +10,7 @@ namespace cw1
         public static async Task Main(string[] args)
         {
             var httpClient = new HttpClient();
-            var response = await httpClient.GetAsync("https://www.pja.edu.pl");
+            var response = await httpClient.GetAsync(args[0]);
 
             if (response.IsSuccessStatusCode)
             {
